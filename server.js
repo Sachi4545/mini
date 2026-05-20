@@ -13,6 +13,9 @@ mongoose.connect(process.env.MONGO_URL)
 .then(() => console.log("MongoDB Connected"))
 .catch((err) => console.log(err));
 
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
 app.use("/users", require("./routes/userRoutes"));
 app.use("/posts", require("./routes/postRoutes"));
 
