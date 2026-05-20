@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URL)
 app.get("/", (req, res) => {
   res.send("Backend is running successfully 🚀");
 });
-app.use("/users", require("./routes/userRoutes"));
+//app.use("/users", require("./routes/userRoutes"));
 app.use("/posts", require("./routes/postRoutes"));
 
 const PORT = process.env.PORT || 5000;
