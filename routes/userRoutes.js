@@ -11,7 +11,7 @@ const multer = require("multer");
 const fs = require("fs");
 
 const User = require("../models/User");
-
+console.log("🔥 USER ROUTES FILE LOADED");
 
 // CREATE uploads FOLDER
 
